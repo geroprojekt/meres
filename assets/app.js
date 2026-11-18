@@ -122,27 +122,80 @@
 
   /* ---------- mérésválasztó ---------- */
   var groups = [["felfűtés", "Felfűtés"], ["kisütés", "Kisütés"]];
-  $("#picker").innerHTML = groups.map(function (g) {
-    var ms = D.measurements.filter(function (m) { return m.kind === g[0]; });
-    if (!ms.length) return "";
-    return '<div class="picker-group"><span>' + g[1] + "</span>" + ms.map(function (m) {
-      return '<button class="chip" type="button" role="tab" data-id="' + esc(m.id) + '" aria-selected="false" title="' + esc(m.label + (m.note ? " – " + m.note : "")) + '">'
-        + esc(m.chip) + "</button>";
-    }).join("") + "</div>";
-  }).join("");
+  var selected = null;                       // a két szekció ugyanazt a mérést mutatja
+  function pickerHtml(filter) {
+    return groups.map(function (g) {
+      var ms = D.measurements.filter(function (m) { return m.kind === g[0] && filter(m); });
+      if (!ms.length) return "";
+      return '<div class="picker-group"><span>' + g[1] + "</span>" + ms.map(function (m) {
+        return '<button class="chip" type="button" role="tab" data-id="' + esc(m.id) + '" aria-selected="false" title="' + esc(m.label + (m.note ? " – " + m.note : "")) + '">'
+          + esc(m.chip) + "</button>";
+      }).join("") + "</div>";
+    }).join("");
+  }
+  function findMeas(id, filter) {
+    var list = D.measurements.filter(filter || function () { return true; });
+    return list.filter(function (x) { return x.id === id; })[0] || list.filter(function (x) { return x.id === selected; })[0] || list[0];
+  }
+  function markChips(root, id) {
+    root.querySelectorAll(".chip").forEach(function (c) { c.setAttribute("aria-selected", c.dataset.id === id ? "true" : "false"); });
+  }
+  $("#picker").innerHTML = pickerHtml(function () { return true; });
+  var hasAnim = function (m) { return !!m.anim; };
+  $("#pickerReplay").innerHTML = pickerHtml(hasAnim);
   var measStart = gallery.length;
   function showMeas(id) {
-    var m = D.measurements.filter(function (x) { return x.id === id; })[0] || D.measurements[0];
-    document.querySelectorAll(".chip").forEach(function (c) { c.setAttribute("aria-selected", c.dataset.id === m.id ? "true" : "false"); });
+    var m = findMeas(id);
+    selected = m.id;
+    markChips($("#picker"), m.id);
     $("#measInfo").innerHTML = '<div class="item"><b>' + esc(m.label) + "</b><span>" + esc(m.when) + (m.note ? " · " + esc(m.note) : "") + "</span></div>"
       + m.info.map(function (it) { return '<div class="item"><b>' + esc(it.v) + "</b><span>" + esc(it.k) + "</span></div>"; }).join("")
-      + (m.excluded.length ? '<span class="badge warn">Kizárt hőmérő: ' + esc(m.excluded.join(", ")) + "</span>" : "");
+      + (m.excluded.length ? '<span class="badge warn">Kizárt hőmérő: ' + esc(m.excluded.join(", ")) + "</span>" : "")
+      + (m.anim ? '<a class="btn" style="margin-left:auto" href="#visszajatszas/' + esc(m.id) + '">'
+        + '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Visszajátszás</a>' : "");
     gallery.length = measStart;
     figs($("#figsMeas"), m.figs);
   }
   $("#picker").addEventListener("click", function (e) {
     var c = e.target.closest(".chip");
     if (c) location.hash = "meresek/" + c.dataset.id;
+  });
+
+  /* ---------- visszajátszás ---------- */
+  var rImg = $("#replayImg"), rLoad = $("#replayLoading");
+  rImg.addEventListener("load", function () { rLoad.classList.add("done"); });
+  rImg.addEventListener("error", function () { rLoad.textContent = "Az animáció nem tölthető be."; });
+  function showReplay(id) {
+    if (!D.measurements.some(hasAnim)) {
+      $("#replayInfo").innerHTML = '<span class="muted">Ehhez a változathoz nem készült animáció.</span>';
+      return;
+    }
+    var m = findMeas(id, hasAnim);
+    selected = m.id;
+    markChips($("#pickerReplay"), m.id);
+    $("#replayInfo").innerHTML = '<div class="item"><b>' + esc(m.label) + "</b><span>" + esc(m.when)
+      + (m.note ? " · " + esc(m.note) : "") + " · " + esc(m.info[0].v) + " → kb. 18 s, " + esc(m.anim.speed) + "× gyorsítás</span></div>";
+    var src = m.anim.src;
+    if (rImg.dataset.src !== src) {
+      rLoad.textContent = "Animáció betöltése… (" + m.anim.mb + " MB)";
+      rLoad.classList.remove("done");
+      rImg.dataset.src = src;
+      rImg.style.setProperty("--ar", m.anim.w + "/" + m.anim.h);
+      rImg.alt = "Visszajátszás – " + m.label;
+      rImg.src = src;
+    }
+    $("#replayDownload").href = src;
+    $("#replayDownload").setAttribute("download", m.id + ".gif");
+  }
+  $("#pickerReplay").addEventListener("click", function (e) {
+    var c = e.target.closest(".chip");
+    if (c) location.hash = "visszajatszas/" + c.dataset.id;
+  });
+  $("#replayRestart").addEventListener("click", function () {
+    var src = rImg.dataset.src;
+    if (!src) return;
+    rImg.src = "";                           // a GIF az elejéről indul újra
+    rImg.src = src;
   });
 
   /* ---------- útvonal (hash) ---------- */
@@ -156,7 +209,9 @@
       if (a.dataset.tab === tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
     if (tab === "meresek") showMeas(parts[1]);
-    var t = { attekintes: "Áttekintés", felfutes: "Felfűtés", kisutes: "Kisütés", meresek: "Mérések", modszer: "Módszer" }[tab];
+    if (tab === "visszajatszas") showReplay(parts[1]);
+    var t = { attekintes: "Áttekintés", felfutes: "Felfűtés", kisutes: "Kisütés", meresek: "Mérések",
+      visszajatszas: "Visszajátszás", modszer: "Módszer" }[tab];
     document.title = t + " · Tároló mérések";
     window.scrollTo(0, 0);
   }

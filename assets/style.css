@@ -180,6 +180,28 @@ td.empty { color: var(--muted); }
 .meas-info .item b { font-size: 16px; font-variant-numeric: tabular-nums; }
 .meas-info .item span { color: var(--muted); font-size: 12px; }
 
+/* Visszajátszás */
+.replay { padding: 0; overflow: hidden; }
+.replay-head { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; padding: 16px 20px; }
+.replay-head .item b { font-size: 16px; display: block; }
+.replay-head .item span { color: var(--muted); font-size: 12.5px; }
+.replay-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--text);
+  font: 600 13.5px var(--font); cursor: pointer; text-decoration: none;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.replay-stage { position: relative; background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.replay-stage img { width: 100%; height: auto; aspect-ratio: var(--ar, 1000 / 520); }
+.replay-loading {
+  position: absolute; inset: 0; display: grid; place-items: center; color: #5b6577; font-weight: 600;
+  background: rgba(255, 255, 255, .85); transition: opacity .2s;
+}
+.replay-loading.done { opacity: 0; pointer-events: none; }
+.replay-note { padding: 12px 20px 16px; margin: 0; }
+
 /* Módszer */
 .prose h2 { font-size: 16px; margin: 18px 0 8px; }
 .prose h2:first-child { margin-top: 0; }

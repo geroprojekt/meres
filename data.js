@@ -1,5 +1,5 @@
 window.DATA = {
- "generated": "2026.11.18. 23:31",
+ "generated": "2026.11.19. 00:07",
  "kpis": [
   {
    "label": "Mérések",
@@ -508,7 +508,7 @@ window.DATA = {
   {
    "src": "img/felfutes_retegzodes.webp",
    "title": "Rétegződés felfűtés közben",
-   "desc": "A legmelegebb és a leghidegebb réteg különbsége. Az első 20 percben 5–7 K, utána minden térfogatáramnál 2–3 K: a csőkígyó gyakorlatilag kevert tárolót ad.",
+   "desc": "A legmelegebb és a leghidegebb rétegátlag különbsége, a gyanús (QC 1/2) értékek nélkül számolva. Az első 20 percben 5–7 K, utána minden térfogatáramnál 2–3 K: a csőkígyó gyakorlatilag kevert tárolót ad.",
    "w": 1500,
    "h": 750,
    "wide": false,
@@ -577,6 +577,13 @@ window.DATA = {
  ],
  "measurements": [
   {
+   "anim": {
+    "src": "img/anim/1117_1303_felfutes_2000_730.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "5,5",
+    "speed": "181"
+   },
    "id": "1117_1303_felfutes_2000_730",
    "kind": "felfűtés",
    "label": "felfűtés, csőkígyó 730 l/h",
@@ -651,6 +658,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1118_1730_felfutes_375_730.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "5,4",
+    "speed": "451"
+   },
    "id": "1118_1730_felfutes_375_730",
    "kind": "felfűtés",
    "label": "felfűtés, csőkígyó 730 l/h",
@@ -733,6 +747,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1117_1441_felfutes_1500_1130.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "5,3",
+    "speed": "395"
+   },
    "id": "1117_1441_felfutes_1500_1130",
    "kind": "felfűtés",
    "label": "felfűtés, csőkígyó 1130 l/h",
@@ -807,6 +828,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1118_1130_felfutes_1000_1530.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "5,4",
+    "speed": "407"
+   },
    "id": "1118_1130_felfutes_1000_1530",
    "kind": "felfűtés",
    "label": "felfűtés, csőkígyó 1530 l/h",
@@ -891,6 +919,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1118_1437_felfutes_500_1930.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "5,3",
+    "speed": "379"
+   },
    "id": "1118_1437_felfutes_500_1930",
    "kind": "felfűtés",
    "label": "felfűtés, csőkígyó 1930 l/h",
@@ -973,6 +1008,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1118_1946_kisutes_375_730.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "6,1",
+    "speed": "128"
+   },
    "id": "1118_1946_kisutes_375_730",
    "kind": "kisütés",
    "label": "kisütés 375 l/h",
@@ -1055,6 +1097,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1118_1631_kisutes_500_1930.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "5,9",
+    "speed": "153"
+   },
    "id": "1118_1631_kisutes_500_1930",
    "kind": "kisütés",
    "label": "kisütés 500 l/h",
@@ -1137,6 +1186,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1118_1334_kisutes_1000_1530.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "6,1",
+    "speed": "103"
+   },
    "id": "1118_1334_kisutes_1000_1530",
    "kind": "kisütés",
    "label": "kisütés 1000 l/h",
@@ -1221,6 +1277,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1117_1641_kisutes_1500_1130.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "6,1",
+    "speed": "65"
+   },
    "id": "1117_1641_kisutes_1500_1130",
    "kind": "kisütés",
    "label": "kisütés 1500 l/h",
@@ -1303,6 +1366,13 @@ window.DATA = {
    ]
   },
   {
+   "anim": {
+    "src": "img/anim/1117_1359_kisutes_2000_730.gif",
+    "w": 880,
+    "h": 458,
+    "mb": "6,0",
+    "speed": "50"
+   },
    "id": "1117_1359_kisutes_2000_730",
    "kind": "kisütés",
    "label": "kisütés 2000 l/h",
