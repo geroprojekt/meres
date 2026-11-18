@@ -185,7 +185,7 @@
       rImg.src = src;
     }
     $("#replayDownload").href = src;
-    $("#replayDownload").setAttribute("download", m.id + ".gif");
+    $("#replayDownload").setAttribute("download", m.id + src.slice(src.lastIndexOf(".")));
   }
   $("#pickerReplay").addEventListener("click", function (e) {
     var c = e.target.closest(".chip");
