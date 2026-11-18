@@ -1,5 +1,5 @@
 window.DATA = {
- "generated": "2026.11.19. 00:07",
+ "generated": "2026.11.19. 00:29",
  "kpis": [
   {
    "label": "Mérések",
@@ -578,10 +578,10 @@ window.DATA = {
  "measurements": [
   {
    "anim": {
-    "src": "img/anim/1117_1303_felfutes_2000_730.gif",
+    "src": "img/anim/1117_1303_felfutes_2000_730.webp",
     "w": 880,
     "h": 458,
-    "mb": "5,5",
+    "mb": "2,5",
     "speed": "181"
    },
    "id": "1117_1303_felfutes_2000_730",
@@ -659,10 +659,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1118_1730_felfutes_375_730.gif",
+    "src": "img/anim/1118_1730_felfutes_375_730.webp",
     "w": 880,
     "h": 458,
-    "mb": "5,4",
+    "mb": "2,4",
     "speed": "451"
    },
    "id": "1118_1730_felfutes_375_730",
@@ -748,10 +748,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1117_1441_felfutes_1500_1130.gif",
+    "src": "img/anim/1117_1441_felfutes_1500_1130.webp",
     "w": 880,
     "h": 458,
-    "mb": "5,3",
+    "mb": "2,4",
     "speed": "395"
    },
    "id": "1117_1441_felfutes_1500_1130",
@@ -829,10 +829,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1118_1130_felfutes_1000_1530.gif",
+    "src": "img/anim/1118_1130_felfutes_1000_1530.webp",
     "w": 880,
     "h": 458,
-    "mb": "5,4",
+    "mb": "2,3",
     "speed": "407"
    },
    "id": "1118_1130_felfutes_1000_1530",
@@ -920,10 +920,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1118_1437_felfutes_500_1930.gif",
+    "src": "img/anim/1118_1437_felfutes_500_1930.webp",
     "w": 880,
     "h": 458,
-    "mb": "5,3",
+    "mb": "2,4",
     "speed": "379"
    },
    "id": "1118_1437_felfutes_500_1930",
@@ -1009,10 +1009,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1118_1946_kisutes_375_730.gif",
+    "src": "img/anim/1118_1946_kisutes_375_730.webp",
     "w": 880,
     "h": 458,
-    "mb": "6,1",
+    "mb": "2,3",
     "speed": "128"
    },
    "id": "1118_1946_kisutes_375_730",
@@ -1098,10 +1098,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1118_1631_kisutes_500_1930.gif",
+    "src": "img/anim/1118_1631_kisutes_500_1930.webp",
     "w": 880,
     "h": 458,
-    "mb": "5,9",
+    "mb": "2,2",
     "speed": "153"
    },
    "id": "1118_1631_kisutes_500_1930",
@@ -1187,10 +1187,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1118_1334_kisutes_1000_1530.gif",
+    "src": "img/anim/1118_1334_kisutes_1000_1530.webp",
     "w": 880,
     "h": 458,
-    "mb": "6,1",
+    "mb": "2,2",
     "speed": "103"
    },
    "id": "1118_1334_kisutes_1000_1530",
@@ -1278,10 +1278,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1117_1641_kisutes_1500_1130.gif",
+    "src": "img/anim/1117_1641_kisutes_1500_1130.webp",
     "w": 880,
     "h": 458,
-    "mb": "6,1",
+    "mb": "2,2",
     "speed": "65"
    },
    "id": "1117_1641_kisutes_1500_1130",
@@ -1367,10 +1367,10 @@ window.DATA = {
   },
   {
    "anim": {
-    "src": "img/anim/1117_1359_kisutes_2000_730.gif",
+    "src": "img/anim/1117_1359_kisutes_2000_730.webp",
     "w": 880,
     "h": 458,
-    "mb": "6,0",
+    "mb": "2,2",
     "speed": "50"
    },
    "id": "1117_1359_kisutes_2000_730",
