@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tároló mérések</title>
+<meta name="description" content="300 literes csőkígyós melegvíz-tároló felfűtési és kisütési méréseinek kiértékelése">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='8' y='3' width='16' height='26' rx='8' fill='%230f766e'/%3E%3Crect x='11' y='15' width='10' height='11' rx='3' fill='%23f97316'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css?v=20261118233141">
+<script>
+  (function () {
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ugrás a tartalomra</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#attekintes" aria-label="Kezdőlap">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="3" width="16" height="26" rx="8"/><rect class="hot" x="11" y="15" width="10" height="11" rx="3"/></svg>
+      <span class="brand-text"><strong>Tároló mérések</strong><small>300 l · csőkígyós</small></span>
+    </a>
+    <nav class="tabs" aria-label="Fő szakaszok">
+      <a href="#attekintes" data-tab="attekintes">Áttekintés</a>
+      <a href="#felfutes" data-tab="felfutes">Felfűtés</a>
+      <a href="#kisutes" data-tab="kisutes">Kisütés</a>
+      <a href="#meresek" data-tab="meresek">Mérések</a>
+      <a href="#modszer" data-tab="modszer">Módszer</a>
+    </nav>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Világos / sötét mód váltása">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section id="attekintes" class="panel" data-panel="attekintes">
+    <div class="hero">
+      <p class="eyebrow">Szakdolgozat · mérési kiértékelés</p>
+      <h1>300 literes csőkígyós melegvíz-tároló</h1>
+      <p class="lead">Felfűtés különböző csőkígyós térfogatáramokkal és kisütés különböző csapolási térfogatáramokkal.
+        6 rétegben fal melletti (3 cm) és belső (30 cm) hőmérők, a csőkígyó be- és kilépő hőmérséklete, 5 s-os mintavétel.</p>
+    </div>
+    <div class="kpis" id="kpis"></div>
+    <div class="grid-2">
+      <article class="card">
+        <h2>Fő megállapítások</h2>
+        <ul class="findings" id="findings"></ul>
+      </article>
+      <article class="card">
+        <h2>Mérések</h2>
+        <div class="mini-list" id="miniList"></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="felfutes" class="panel" data-panel="felfutes" hidden>
+    <header class="panel-head">
+      <h1>Felfűtés</h1>
+      <p>A csőkígyós térfogatáram hatása a felfűtési időre, a rétegek hőmérsékletére és a csőkígyó teljesítményére.</p>
+    </header>
+    <div class="card table-card">
+      <div class="card-head"><h2>Eredmények</h2><span class="muted" id="heatNote"></span></div>
+      <div class="table-wrap" id="heatTable"></div>
+    </div>
+    <div class="figs" id="figsHeat"></div>
+  </section>
+
+  <section id="kisutes" class="panel" data-panel="kisutes" hidden>
+    <header class="panel-head">
+      <h1>Kisütés</h1>
+      <p>Mennyi használható melegvíz vehető ki a tárolóból, és hogyan halad felfelé a hidegfront.</p>
+    </header>
+    <div class="card table-card">
+      <div class="card-head"><h2>Eredmények</h2></div>
+      <div class="table-wrap" id="disTable"></div>
+    </div>
+    <div class="figs" id="figsDis"></div>
+  </section>
+
+  <section id="meresek" class="panel" data-panel="meresek" hidden>
+    <header class="panel-head">
+      <h1>Mérésenkénti ábrák</h1>
+      <p>Válassz egy mérést: fal melletti, belső és rétegátlag hőmérsékletek, a mérőprogram idősora és tárolósémája.</p>
+    </header>
+    <div class="picker" id="picker" role="tablist" aria-label="Mérés kiválasztása"></div>
+    <div class="meas-info card" id="measInfo"></div>
+    <div class="figs" id="figsMeas"></div>
+  </section>
+
+  <section id="modszer" class="panel" data-panel="modszer" hidden>
+    <header class="panel-head">
+      <h1>Módszer</h1>
+      <p>Hogyan készültek az eredmények: érzékelők, szűrés, átlagolás, számítások.</p>
+    </header>
+    <div class="grid-2">
+      <article class="card prose" id="method"></article>
+      <article class="card">
+        <h2>Adatminőség (QC-flag)</h2>
+        <p class="muted">Törölve: a fizikailag lehetetlen érték (QC 4), a 20 K-nél jobban eltérő gyanús érték (QC 3) és a tudottan hibás hőmérő (QC 9). A gyanús értékek (QC 1 tüske, QC 2 eltér a szomszédoktól) megmaradnak, és a grafikonokon narancs karika jelöli őket.</p>
+        <div class="table-wrap" id="qcTable"></div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span id="generated"></span>
+  <span>Ábrák: kalibrált, szűrt adatok · kattints egy ábrára a nagyításhoz</span>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Ábra nagyítva">
+  <div class="lb-bar">
+    <div class="lb-title" id="lbTitle"></div>
+    <div class="lb-actions">
+      <a class="icon-btn" id="lbOpen" target="_blank" rel="noopener" aria-label="Megnyitás új lapon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+      </a>
+      <button class="icon-btn" id="lbClose" type="button" aria-label="Bezárás">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="lb-stage">
+    <button class="lb-nav prev" id="lbPrev" type="button" aria-label="Előző ábra">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <img id="lbImg" alt="">
+    <button class="lb-nav next" id="lbNext" type="button" aria-label="Következő ábra">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+  <p class="lb-desc" id="lbDesc"></p>
+</dialog>
+
+<script src="data.js?v=20261118233141"></script>
+<script src="assets/app.js?v=20261118233141"></script>
+</body>
+</html>
