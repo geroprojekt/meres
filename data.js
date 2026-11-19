@@ -1,5 +1,5 @@
 window.DATA = {
- "generated": "2026.11.19. 12:06",
+ "generated": "2026.11.19. 13:13",
  "kpis": [
   {
    "label": "Mérések",
@@ -479,6 +479,21 @@ window.DATA = {
    "w": 2400,
    "h": 1425,
    "wide": true,
+   "explain": [
+    {
+     "h": "Mit mutat?",
+     "p": "Hat grafikon, rétegenként (bal felső: 6. – felső réteg, jobb alsó: 1. – alsó réteg). Mindegyikben az adott réteg fal melletti (3 cm) hőmérője, minden felfűtés külön színnel."
+    },
+    {
+     "h": "Miért fontos?",
+     "p": "Így rétegenként, közvetlenül összevethető, hogy a csőkígyós térfogatáram hogyan változtatja meg a melegedés ütemét. A fal mellett a hőveszteség és a falmenti áramlás miatt a hőmérséklet eltérhet a belsőtől – ezért külön is érdemes nézni."
+    },
+    {
+     "h": "Mit kell látni?",
+     "p": "Nagyobb térfogatáramnál minden rétegben meredekebb a görbe (1530 és 1930 l/h gyorsabb, mint 730 és 1130 l/h). A rétegek görbéi nagyon hasonlóak: a csőkígyós felfűtés az egész víztömeget együtt melegíti. Az alsó réteg kissé lemarad. A pufferes felfűtés kb. 59 °C-nál megáll, mert a puffer kifogyott."
+    }
+   ],
+   "side": false,
    "group": "Rétegenként"
   },
   {
@@ -487,7 +502,22 @@ window.DATA = {
    "desc": "Ugyanez a belső (30 cm) hőmérőkkel.",
    "w": 2400,
    "h": 1425,
-   "wide": true
+   "wide": true,
+   "explain": [
+    {
+     "h": "Mit mutat?",
+     "p": "Ugyanaz a hat grafikon, a belső (30 cm-re a faltól) hőmérőkkel."
+    },
+    {
+     "h": "Miért fontos?",
+     "p": "A belső hőmérő a víztömeg közepének hőmérsékletét adja, kevésbé hat rá a fal. A fal melletti ábrával összevetve kiderül, van-e a rétegen belül vízszintes hőmérséklet-különbség."
+    },
+    {
+     "h": "Mit kell látni?",
+     "p": "A lefutás gyakorlatilag ugyanaz, mint a fal mellett – a rétegen belül a víz jól keveredik. A 3. rétegben a 11.18-i mérésekben a T3 hőmérő hibás volt: a fájlnévben jelölt két mérésből kizártuk, a többiben a gyanús szakasz szaggatott."
+    }
+   ],
+   "side": false
   },
   {
    "src": "img/felfutes_retegenkent_atlag.webp",
@@ -495,7 +525,22 @@ window.DATA = {
    "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
    "w": 2400,
    "h": 1425,
-   "wide": true
+   "wide": true,
+   "explain": [
+    {
+     "h": "Mit mutat?",
+     "p": "Rétegenként a fal melletti és a belső hőmérő átlaga – az adott réteg hőmérsékletének legjobb becslése."
+    },
+    {
+     "h": "Miért fontos?",
+     "p": "Ezt érdemes idézni, ha egy réteg hőmérsékletéről beszélünk: egy hőmérő esetleges eltérése így kisebb súllyal számít."
+    },
+    {
+     "h": "Mit kell látni?",
+     "p": "A felfűtés első kb. 20 percében a rétegek között 5–7 K a különbség, utána 2–3 K-re egyenlítődik ki – a tároló gyakorlatilag kevert. A végső hőmérséklet minden kazános felfűtésnél 72–74 °C körül áll be."
+    }
+   ],
+   "side": false
   },
   {
    "src": "img/felfutes_fal_minus_belso_retegenkent.webp",
@@ -503,7 +548,22 @@ window.DATA = {
    "desc": "Pozitív: a fal mellett melegebb. Felfűtéskor a különbség kicsi (±1–2 K), a tároló egyenletesen melegszik; alul a fal kissé hidegebb.",
    "w": 2400,
    "h": 1425,
-   "wide": true
+   "wide": true,
+   "explain": [
+    {
+     "h": "Mit mutat?",
+     "p": "Rétegenként a fal melletti mínusz a belső hőmérő különbsége. Pozitív: a fal mellett melegebb, negatív: bent melegebb. A 0 vonal a tökéletes vízszintes egyenletesség."
+    },
+    {
+     "h": "Miért fontos?",
+     "p": "A tároló falának hatását mutatja: ha a fal mellett tartósan hidegebb a víz, ott hőveszteség vagy falmenti lefelé áramlás van."
+    },
+    {
+     "h": "Mit kell látni?",
+     "p": "Felfűtéskor a különbség kicsi, többnyire ±1–2 K. Az alsó rétegben a fal mellett kb. 1–2 K-nel hidegebb, a 4. és 6. rétegben kb. 1 K-nel melegebb. A 3. rétegben látható nagyobb eltérések a hibás T3 hőmérőtől származnak, nem valós jelenségek."
+    }
+   ],
+   "side": false
   },
   {
    "src": "img/felfutes_retegzodes.webp",
@@ -548,6 +608,21 @@ window.DATA = {
    "w": 2400,
    "h": 1425,
    "wide": true,
+   "explain": [
+    {
+     "h": "Mit mutat?",
+     "p": "Hat grafikon, rétegenként (bal felső: 6. – felső réteg, jobb alsó: 1. – alsó réteg), a fal melletti hőmérőkkel. A vízszintes tengely a kivett melegvíz térfogata literben – nem az idő."
+    },
+    {
+     "h": "Miért a kivett térfogat?",
+     "p": "A hidegfront ugyanannyi kivett liter után ér el egy réteget, akármilyen gyorsan csapolunk; csak az idő más (375 l/h-nál ötször lassabb, mint 2000 l/h-nál). Térfogat szerint a különböző kisütések egymásra kerülnek, így csak a valódi különbség látszik."
+    },
+    {
+     "h": "Mit kell látni?",
+     "p": "Minden grafikonon egy lépcső: amikor a hideg víz eléri a réteget, a hőmérséklet 72 °C-ról 15 °C körülre esik. A lépcső alulról felfelé (az 1. rétegtől a 6. felé), rétegről rétegre később jön – ez a feltolódó hidegfront. Ha a görbék egymásra esnek, a csapolás erőssége nem rontja a rétegződést. A 2000 l/h-s kisütés 59 °C-ról indult, ezért alacsonyabbról esik."
+    }
+   ],
+   "side": false,
    "group": "Rétegenként (kivett térfogat szerint)"
   },
   {
@@ -556,7 +631,22 @@ window.DATA = {
    "desc": "Ugyanez a belső hőmérőkkel.",
    "w": 2400,
    "h": 1425,
-   "wide": true
+   "wide": true,
+   "explain": [
+    {
+     "h": "Mit mutat?",
+     "p": "Ugyanez a belső hőmérőkkel."
+    },
+    {
+     "h": "Miért fontos?",
+     "p": "A fal melletti ábrával összevetve megmutatja, hogy a hidegfront egyszerre ér-e oda a fal mellé és a tároló belsejébe."
+    },
+    {
+     "h": "Mit kell látni?",
+     "p": "A lépcsők helye nagyjából egyezik a fal mellettiekkel, de nem pontosan – az eltérés a következő ábrákon (fal mínusz belső) látszik jól. A lépcső meredeksége a front élessége: minél meredekebb, annál kevesebb a keveredés."
+    }
+   ],
+   "side": false
   },
   {
    "src": "img/kisutes_retegenkent_atlag_terfogat.webp",
@@ -564,15 +654,45 @@ window.DATA = {
    "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
    "w": 2400,
    "h": 1425,
-   "wide": true
+   "wide": true,
+   "explain": [
+    {
+     "h": "Mit mutat?",
+     "p": "Rétegenként a fal melletti és a belső hőmérő átlaga, a kivett térfogat szerint."
+    },
+    {
+     "h": "Miért fontos?",
+     "p": "Ebből olvasható le legjobban, hány liter után hűl ki az adott réteg. Ideális, keveredés nélküli (dugattyúszerű) kisütésnél az n. réteg közepe (n − 0,5) · 50 liter után hűlne le."
+    },
+    {
+     "h": "Mit kell látni?",
+     "p": "A rétegek a vártnál valamivel korábban hűlnek le – a belépő hideg víz részben keveredik. A felső réteg kb. 170–200 liter után hűl ki, ez egyezik azzal, hogy kb. 190–225 liter használható (≥ 40 °C) melegvíz jön ki a 300 literből."
+    }
+   ],
+   "side": false
   },
   {
    "src": "img/kisutes_fal_minus_belso_retegenkent.webp",
    "title": "Fal melletti mínusz belső – a hidegfront alakja",
    "desc": "A csúcsok azt mutatják, hogy a front nem vízszintes: negatív csúcs – a fal mellett ér oda előbb a hideg víz, pozitív – középen. A csúcs szélessége (literben) a front ferdeségét jelzi.",
-   "w": 2400,
-   "h": 1425,
-   "wide": true
+   "w": 1575,
+   "h": 2250,
+   "wide": true,
+   "explain": [
+    {
+     "h": "Mit mutat?",
+     "p": "Hat egymás alatti sáv, mint a tárolóban: legfelül a 6. (felső), legalul az 1. (alsó) réteg. Mindegyikben a fal melletti mínusz a belső hőmérő, a kivett térfogat szerint. Pozitív: a fal mellett melegebb, negatív: bent melegebb."
+    },
+    {
+     "h": "Miért fontos?",
+     "p": "A hidegfront alakját mutatja meg. Ha a front vízszintes lenne, a két hőmérő egyszerre hűlne le, és a különbség végig 0 körül maradna. A csúcsok azt jelzik, hogy a front ferde vagy görbült: rövid ideig az egyik hőmérő már a hideg vízben van, a másik még a melegben."
+    },
+    {
+     "h": "Mit kell látni?",
+     "p": "Negatív csúcs: a fal mellett ér oda előbb a hideg víz; pozitív csúcs: középen. Alul (1. réteg) erősen negatív – a belépő hideg víz a fal mentén terül szét. A 2. és 5. rétegben pozitív, a 6.-ban negatív – a front alakja felfelé haladva változik. A csúcs szélessége (literben) a front ferdeségét méri; a magassága kevésbé fontos. A front előtti kis állandó eltérés (1–1,5 K) a két hőmérő közti tartós különbség. A 3. rétegben a 375 és 500 l/h-s kisütésnél a +5–7 K a T3 hibás (alacsony) méréséből ered."
+    }
+   ],
+   "side": true
   }
  ],
  "measurements": [
