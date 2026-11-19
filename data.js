@@ -1,5 +1,5 @@
 window.DATA = {
- "generated": "2026.11.19. 00:29",
+ "generated": "2026.11.19. 12:06",
  "kpis": [
   {
    "label": "Mérések",
@@ -52,8 +52,8 @@ window.DATA = {
    "Belső átlag vége [°C]",
    "T14 átlag [°C]",
    "Bevitt hő [kWh]",
-   "Átlagos bevitt hőáram Q̇ [kW]",
-   "Max. bevitt hőáram Q̇ (1 perces átlag) [kW]",
+   "Átlagos bevitt hőteljesítmény Q̇ [kW]",
+   "Max. bevitt hőteljesítmény Q̇ (1 perces átlag) [kW]",
    "Idő 16→30 °C [perc]",
    "Idő 16→40 °C [perc]",
    "Idő 16→50 °C [perc]",
@@ -78,8 +78,8 @@ window.DATA = {
     "Belső átlag vége [°C]": 58.92,
     "T14 átlag [°C]": 71.01,
     "Bevitt hő [kWh]": 11.542,
-    "Átlagos bevitt hőáram Q̇ [kW]": 12.79,
-    "Max. bevitt hőáram Q̇ (1 perces átlag) [kW]": 33.12,
+    "Átlagos bevitt hőteljesítmény Q̇ [kW]": 12.79,
+    "Max. bevitt hőteljesítmény Q̇ (1 perces átlag) [kW]": 33.12,
     "Idő 16→30 °C [perc]": 8.7,
     "Idő 16→40 °C [perc]": 16.0,
     "Idő 16→50 °C [perc]": 26.5,
@@ -103,8 +103,8 @@ window.DATA = {
     "Belső átlag vége [°C]": 72.37,
     "T14 átlag [°C]": 75.64,
     "Bevitt hő [kWh]": 16.3,
-    "Átlagos bevitt hőáram Q̇ [kW]": 7.22,
-    "Max. bevitt hőáram Q̇ (1 perces átlag) [kW]": 31.88,
+    "Átlagos bevitt hőteljesítmény Q̇ [kW]": 7.22,
+    "Max. bevitt hőteljesítmény Q̇ (1 perces átlag) [kW]": 31.88,
     "Idő 16→30 °C [perc]": 8.7,
     "Idő 16→40 °C [perc]": 16.0,
     "Idő 16→50 °C [perc]": 26.3,
@@ -128,8 +128,8 @@ window.DATA = {
     "Belső átlag vége [°C]": 71.59,
     "T14 átlag [°C]": 71.85,
     "Bevitt hő [kWh]": 17.481,
-    "Átlagos bevitt hőáram Q̇ [kW]": 8.85,
-    "Max. bevitt hőáram Q̇ (1 perces átlag) [kW]": 39.17,
+    "Átlagos bevitt hőteljesítmény Q̇ [kW]": 8.85,
+    "Max. bevitt hőteljesítmény Q̇ (1 perces átlag) [kW]": 39.17,
     "Idő 16→30 °C [perc]": 8.2,
     "Idő 16→40 °C [perc]": 16.0,
     "Idő 16→50 °C [perc]": 28.2,
@@ -153,8 +153,8 @@ window.DATA = {
     "Belső átlag vége [°C]": 72.17,
     "T14 átlag [°C]": 74.27,
     "Bevitt hő [kWh]": 16.919,
-    "Átlagos bevitt hőáram Q̇ [kW]": 8.31,
-    "Max. bevitt hőáram Q̇ (1 perces átlag) [kW]": 43.11,
+    "Átlagos bevitt hőteljesítmény Q̇ [kW]": 8.31,
+    "Max. bevitt hőteljesítmény Q̇ (1 perces átlag) [kW]": 43.11,
     "Idő 16→30 °C [perc]": 5.7,
     "Idő 16→40 °C [perc]": 10.8,
     "Idő 16→50 °C [perc]": 18.3,
@@ -178,8 +178,8 @@ window.DATA = {
     "Belső átlag vége [°C]": 71.14,
     "T14 átlag [°C]": 74.44,
     "Bevitt hő [kWh]": 17.364,
-    "Átlagos bevitt hőáram Q̇ [kW]": 9.17,
-    "Max. bevitt hőáram Q̇ (1 perces átlag) [kW]": 59.42,
+    "Átlagos bevitt hőteljesítmény Q̇ [kW]": 9.17,
+    "Max. bevitt hőteljesítmény Q̇ (1 perces átlag) [kW]": 59.42,
     "Idő 16→30 °C [perc]": 5.5,
     "Idő 16→40 °C [perc]": 10.1,
     "Idő 16→50 °C [perc]": 16.4,
@@ -512,12 +512,12 @@ window.DATA = {
    "w": 1500,
    "h": 750,
    "wide": false,
-   "group": "Rétegződés és hőáram"
+   "group": "Rétegződés és hőteljesítmény"
   },
   {
    "src": "img/osszes_uzemallapot_bevitt_hoaram.webp",
-   "title": "Csőkígyón bevitt hőáram – minden felfűtés",
-   "desc": "1 perces átlag. Ahogy a tároló közelít az előremenő hőmérséklethez, a hőáram csökken. A pufferes felfűtésnél a puffer kifogyott: a hőáram 50 perc körül nullára esik.",
+   "title": "Csőkígyón bevitt hőteljesítmény – minden felfűtés",
+   "desc": "1 perces átlag. Ahogy a tároló közelít az előremenő hőmérséklethez, a hőteljesítmény csökken. A pufferes felfűtésnél a puffer kifogyott: a hőteljesítmény 50 perc körül nullára esik.",
    "w": 1650,
    "h": 870,
    "wide": false
@@ -610,7 +610,7 @@ window.DATA = {
     {
      "src": "img/1117_1303_felfutes_2000_730/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -618,7 +618,7 @@ window.DATA = {
     {
      "src": "img/1117_1303_felfutes_2000_730/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -626,29 +626,21 @@ window.DATA = {
     {
      "src": "img/1117_1303_felfutes_2000_730/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1117_1303_felfutes_2000_730/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1117_1303_felfutes_2000_730/6_idosor_minden_homero.webp",
+     "src": "img/1117_1303_felfutes_2000_730/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1799,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1822,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1117_1303_felfutes_2000_730/7_tarolo_sema.webp",
+     "src": "img/1117_1303_felfutes_2000_730/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 1867,
@@ -691,7 +683,7 @@ window.DATA = {
     {
      "src": "img/1118_1730_felfutes_375_730/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -699,7 +691,7 @@ window.DATA = {
     {
      "src": "img/1118_1730_felfutes_375_730/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -707,37 +699,29 @@ window.DATA = {
     {
      "src": "img/1118_1730_felfutes_375_730/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1118_1730_felfutes_375_730/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1118_1730_felfutes_375_730/5_adatminoseg.webp",
+     "src": "img/1118_1730_felfutes_375_730/4_adatminoseg.webp",
      "title": "Adatminőség (QC-flag)",
-     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő gyanús érték, törölve (QC 3). Narancs karika: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
+     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő érték, törölve (QC 3). Szaggatott szakasz: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
      "w": 1500,
      "h": 450,
      "wide": false
     },
     {
-     "src": "img/1118_1730_felfutes_375_730/6_idosor_minden_homero.webp",
+     "src": "img/1118_1730_felfutes_375_730/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1799,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1822,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1118_1730_felfutes_375_730/7_tarolo_sema.webp",
+     "src": "img/1118_1730_felfutes_375_730/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 1867,
@@ -780,7 +764,7 @@ window.DATA = {
     {
      "src": "img/1117_1441_felfutes_1500_1130/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -788,7 +772,7 @@ window.DATA = {
     {
      "src": "img/1117_1441_felfutes_1500_1130/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -796,29 +780,21 @@ window.DATA = {
     {
      "src": "img/1117_1441_felfutes_1500_1130/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1117_1441_felfutes_1500_1130/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1117_1441_felfutes_1500_1130/6_idosor_minden_homero.webp",
+     "src": "img/1117_1441_felfutes_1500_1130/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1808,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1830,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1117_1441_felfutes_1500_1130/7_tarolo_sema.webp",
+     "src": "img/1117_1441_felfutes_1500_1130/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 1867,
@@ -863,7 +839,7 @@ window.DATA = {
     {
      "src": "img/1118_1130_felfutes_1000_1530/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -871,7 +847,7 @@ window.DATA = {
     {
      "src": "img/1118_1130_felfutes_1000_1530/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -879,37 +855,29 @@ window.DATA = {
     {
      "src": "img/1118_1130_felfutes_1000_1530/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1118_1130_felfutes_1000_1530/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1118_1130_felfutes_1000_1530/5_adatminoseg.webp",
+     "src": "img/1118_1130_felfutes_1000_1530/4_adatminoseg.webp",
      "title": "Adatminőség (QC-flag)",
-     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő gyanús érték, törölve (QC 3). Narancs karika: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
+     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő érték, törölve (QC 3). Szaggatott szakasz: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
      "w": 1500,
      "h": 450,
      "wide": false
     },
     {
-     "src": "img/1118_1130_felfutes_1000_1530/6_idosor_minden_homero.webp",
+     "src": "img/1118_1130_felfutes_1000_1530/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1808,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1830,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1118_1130_felfutes_1000_1530/7_tarolo_sema.webp",
+     "src": "img/1118_1130_felfutes_1000_1530/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 1867,
@@ -952,7 +920,7 @@ window.DATA = {
     {
      "src": "img/1118_1437_felfutes_500_1930/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -960,7 +928,7 @@ window.DATA = {
     {
      "src": "img/1118_1437_felfutes_500_1930/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -968,37 +936,29 @@ window.DATA = {
     {
      "src": "img/1118_1437_felfutes_500_1930/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1118_1437_felfutes_500_1930/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1118_1437_felfutes_500_1930/5_adatminoseg.webp",
+     "src": "img/1118_1437_felfutes_500_1930/4_adatminoseg.webp",
      "title": "Adatminőség (QC-flag)",
-     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő gyanús érték, törölve (QC 3). Narancs karika: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
+     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő érték, törölve (QC 3). Szaggatott szakasz: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
      "w": 1500,
      "h": 450,
      "wide": false
     },
     {
-     "src": "img/1118_1437_felfutes_500_1930/6_idosor_minden_homero.webp",
+     "src": "img/1118_1437_felfutes_500_1930/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1808,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1830,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1118_1437_felfutes_500_1930/7_tarolo_sema.webp",
+     "src": "img/1118_1437_felfutes_500_1930/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 1867,
@@ -1041,7 +1001,7 @@ window.DATA = {
     {
      "src": "img/1118_1946_kisutes_375_730/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1049,7 +1009,7 @@ window.DATA = {
     {
      "src": "img/1118_1946_kisutes_375_730/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1057,37 +1017,29 @@ window.DATA = {
     {
      "src": "img/1118_1946_kisutes_375_730/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1118_1946_kisutes_375_730/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1118_1946_kisutes_375_730/5_adatminoseg.webp",
+     "src": "img/1118_1946_kisutes_375_730/4_adatminoseg.webp",
      "title": "Adatminőség (QC-flag)",
-     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő gyanús érték, törölve (QC 3). Narancs karika: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
+     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő érték, törölve (QC 3). Szaggatott szakasz: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
      "w": 1500,
      "h": 795,
      "wide": false
     },
     {
-     "src": "img/1118_1946_kisutes_375_730/6_idosor_minden_homero.webp",
+     "src": "img/1118_1946_kisutes_375_730/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1771,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1766,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1118_1946_kisutes_375_730/7_tarolo_sema.webp",
+     "src": "img/1118_1946_kisutes_375_730/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 2388,
@@ -1130,7 +1082,7 @@ window.DATA = {
     {
      "src": "img/1118_1631_kisutes_500_1930/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1138,7 +1090,7 @@ window.DATA = {
     {
      "src": "img/1118_1631_kisutes_500_1930/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1146,37 +1098,29 @@ window.DATA = {
     {
      "src": "img/1118_1631_kisutes_500_1930/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1118_1631_kisutes_500_1930/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1118_1631_kisutes_500_1930/5_adatminoseg.webp",
+     "src": "img/1118_1631_kisutes_500_1930/4_adatminoseg.webp",
      "title": "Adatminőség (QC-flag)",
-     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő gyanús érték, törölve (QC 3). Narancs karika: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
+     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő érték, törölve (QC 3). Szaggatott szakasz: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
      "w": 1500,
      "h": 450,
      "wide": false
     },
     {
-     "src": "img/1118_1631_kisutes_500_1930/6_idosor_minden_homero.webp",
+     "src": "img/1118_1631_kisutes_500_1930/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1771,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1766,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1118_1631_kisutes_500_1930/7_tarolo_sema.webp",
+     "src": "img/1118_1631_kisutes_500_1930/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 2388,
@@ -1221,7 +1165,7 @@ window.DATA = {
     {
      "src": "img/1118_1334_kisutes_1000_1530/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1229,7 +1173,7 @@ window.DATA = {
     {
      "src": "img/1118_1334_kisutes_1000_1530/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1237,37 +1181,29 @@ window.DATA = {
     {
      "src": "img/1118_1334_kisutes_1000_1530/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1118_1334_kisutes_1000_1530/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1118_1334_kisutes_1000_1530/5_adatminoseg.webp",
+     "src": "img/1118_1334_kisutes_1000_1530/4_adatminoseg.webp",
      "title": "Adatminőség (QC-flag)",
-     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő gyanús érték, törölve (QC 3). Narancs karika: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
+     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő érték, törölve (QC 3). Szaggatott szakasz: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
      "w": 1500,
      "h": 795,
      "wide": false
     },
     {
-     "src": "img/1118_1334_kisutes_1000_1530/6_idosor_minden_homero.webp",
+     "src": "img/1118_1334_kisutes_1000_1530/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1771,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1766,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1118_1334_kisutes_1000_1530/7_tarolo_sema.webp",
+     "src": "img/1118_1334_kisutes_1000_1530/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 2388,
@@ -1310,7 +1246,7 @@ window.DATA = {
     {
      "src": "img/1117_1641_kisutes_1500_1130/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1318,7 +1254,7 @@ window.DATA = {
     {
      "src": "img/1117_1641_kisutes_1500_1130/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1326,37 +1262,21 @@ window.DATA = {
     {
      "src": "img/1117_1641_kisutes_1500_1130/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1117_1641_kisutes_1500_1130/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1117_1641_kisutes_1500_1130/5_adatminoseg.webp",
-     "title": "Adatminőség (QC-flag)",
-     "desc": "Nyers és felhasznált adatsor hőmérőnként. Piros x: fizikailag lehetetlen, törölve (QC 4). Lila +: 20 K-nél jobban eltérő gyanús érték, törölve (QC 3). Narancs karika: gyanús, de megtartott érték (QC 1 tüske, QC 2 eltér a szomszédoktól).",
-     "w": 1500,
-     "h": 450,
-     "wide": false
-    },
-    {
-     "src": "img/1117_1641_kisutes_1500_1130/6_idosor_minden_homero.webp",
+     "src": "img/1117_1641_kisutes_1500_1130/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1774,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1770,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1117_1641_kisutes_1500_1130/7_tarolo_sema.webp",
+     "src": "img/1117_1641_kisutes_1500_1130/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 2388,
@@ -1399,7 +1319,7 @@ window.DATA = {
     {
      "src": "img/1117_1359_kisutes_2000_730/1_fal.webp",
      "title": "Fal melletti hőmérők",
-     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Narancs karika: gyanús (QC-flag), de megtartott érték.",
+     "desc": "A 6 palást melletti (3 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény. Szaggatott szakasz: gyanús (QC 1/2), de megtartott érték.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1407,7 +1327,7 @@ window.DATA = {
     {
      "src": "img/1117_1359_kisutes_2000_730/2_belso.webp",
      "title": "Belső hőmérők",
-     "desc": "A 6 belső (30 cm) hőmérő, rétegenként.",
+     "desc": "A 6 belső (30 cm) hőmérő, rétegenként. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
@@ -1415,29 +1335,21 @@ window.DATA = {
     {
      "src": "img/1117_1359_kisutes_2000_730/3_retegatlag.webp",
      "title": "Rétegátlag",
-     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga.",
+     "desc": "Rétegenként a fal melletti és a belső hőmérő átlaga. Felfűtésnél jobb tengelyen a csőkígyón bevitt hőteljesítmény.",
      "w": 1650,
      "h": 900,
      "wide": false
     },
     {
-     "src": "img/1117_1359_kisutes_2000_730/4_csoportatlagok.webp",
-     "title": "Fal / belső / tároló átlag",
-     "desc": "A fal melletti és a belső hőmérők átlaga, a tárolóátlag és a be-/kilépő hőmérsékletek egy ábrán.",
-     "w": 1650,
-     "h": 900,
-     "wide": false
-    },
-    {
-     "src": "img/1117_1359_kisutes_2000_730/6_idosor_minden_homero.webp",
+     "src": "img/1117_1359_kisutes_2000_730/5_idosor_minden_homero.webp",
      "title": "Idősor – minden hőmérő",
-     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőáram (1 perces átlag).",
-     "w": 1774,
+     "desc": "A mérőprogram grafikonja: mind a 17 hőmérő, jobb tengelyen a hőteljesítmény (1 perces átlag). Szaggatott szakasz: gyanús érték (QC 1/2).",
+     "w": 1770,
      "h": 960,
      "wide": true
     },
     {
-     "src": "img/1117_1359_kisutes_2000_730/7_tarolo_sema.webp",
+     "src": "img/1117_1359_kisutes_2000_730/6_tarolo_sema.webp",
      "title": "Tároló séma – pillanatképek",
      "desc": "A mérőprogram tárolónézete. Kisütésnél a hidegfront rétegenkénti megérkezésének pillanataiban.",
      "w": 2388,
@@ -1447,5 +1359,5 @@ window.DATA = {
    ]
   }
  ],
- "methodHtml": "<h2>Mérőállomás (a mérőprogram alapján)</h2>\n<ul>\n<li>T0: alsó csonk (kisütésnél hideg belépő), T1–T6: belső (30 cm) hőmérők az 1.(alsó)–6.(felső) rétegben, T7–T12: fal melletti (3 cm) hőmérők ugyanazokban a rétegekben, T13: felső melegvíz-kilépő, T14/T15: csőkígyó belépő/kilépő, T16: környezet. Minden számítás a kalibrált (<code>_korr</code>) oszlopokból.</li>\n<li>Fájlnév: <code>Meres_&lt;dátum&gt;_&lt;idő&gt;_&lt;kisütési l/h&gt;_&lt;csőkígyós l/h&gt;_&lt;megjegyzés&gt;</code>.</li>\n<li>Tároló: 300 l, 6 egyenlő (50 l-es) réteggel számolva.</li>\n</ul>\n<h2>Adatminőség – mintánkénti QC-flag</h2>\n<p>Minden mérési pont (5 s) minden hőmérőjéhez minőségjelző tartozik. Csak a fizikailag lehetetlen érték törlődik,</p>\n<p>minden más anomália megmarad az adatsorban és a grafikonokon, csak meg van jelölve (narancs karika).</p>\n<ul>\n<li>0 – jó</li>\n<li>1 – gyanús, tüske (T1–T12): a 35 s-os mozgó mediántól &gt; 5 K eltérés, ami azonnal visszaugrik (a meredek, de monoton felfutás / hidegfront nem az) → megtartva</li>\n<li>2 – gyanús, eltér a környezetétől (T1–T12): legalább 30 s-ig &gt; 2 K-val a rétegtárs és a függőleges szomszédok által kijelölt sávon kívül (1. rétegben csak felső, 6.-ban csak alsó korlát) → megtartva</li>\n<li>3 – hibás, szélsőséges eltérés (T1–T12): a minta (akár rövid kilengés is) több mint 20 K-val kívül esik a rétegtárs és a függőleges szomszédok által kijelölt sávon → törölve</li>\n<li>4 – hibás, fizikailag lehetetlen: &lt; 0 °C vagy &gt; 100 °C (pl. −201,6 °C szenzorszakadás), vagy a tárolóban (T1–T13) hidegebb a leghidegebb belépő víznél (T0 min.) − 5 K, ill. melegebb a legmelegebb előremenőnél (T14 max.) + 5 K → törölve</li>\n<li>9 – kizárva, tudottan hibás hőmérő (mérés közben feljegyezve, fájlnévben „T3 hibás”): T3 a 11.18-i 1000/1530-as felfűtésből és kisütésből → törölve</li>\n</ul>\n<p>A gyanús (1/2) értékek az átlagokban is benne vannak. Interpoláció nincs: a törölt minta helyén a görbe megszakad.</p>\n<p>Részletek: <code>01_meresek/&lt;mérés&gt;/5_adatminoseg.png</code>, az Excel „Adatminőség (QC)” lapja és a mérésenkénti adatlapok „QC T0…T16” oszlopai.</p>\n<h2>Átlagok</h2>\n<ul>\n<li>Rétegátlag: az adott réteg fal melletti és belső hőmérőjének átlaga, (belső + fal)/2. Ha az egyik értéke az adott pillanatban extrémként törölve van, a réteg értéke abban a pillanatban a megmaradt hőmérő. Más rétegből vagy időben nincs interpoláció.</li>\n<li>Fal / belső átlag: az adott csoport érvényes hőmérőinek átlaga.</li>\n<li>Tároló átlag: a 6 rétegátlag átlaga.</li>\n</ul>\n<h2>Hőmennyiségek</h2>\n<ul>\n<li>Felfűtés: hőáram Q̇ = V̇_csőkígyó·ρ((T14+T15)/2)·cp·(T14 − T15) [kW], hőmennyiség Q = ∫Q̇ dt [kWh].</li>\n<li>A Q̇ 5 s-onként számolt; az ábrákon vastagon az 1 perces (12 mintás, középre igazított) mozgóátlag, halványan a nyers érték. A Q a nyers 5 s-os értékekből összegzett, a simítás nem befolyásolja.</li>\n<li>Kisütés: a csőkígyó nem üzemel (T14/T15 lassan hűl), ezért a kivett hőt mutatjuk: Q̇ = V̇_kisütés·ρ(T0)·cp·(T13 − T0).</li>\n</ul>\n<h2>Időállandó</h2>\n<ul>\n<li>Felfűtési idő: a tároló átlag 16 °C-ról 30, 40, 50, 60, 65, 70 °C-ra érésének ideje (közös kezdőpont).</li>\n<li>Exponenciális illesztés: T(t) = T∞ − (T∞ − T₀)·e^(−t/τ) (az első 3 perc nélkül); 3τ ≈ 95%-os felfűtés.</li>\n<li>Fizikai időállandó: m·cp·dT/dt = V̇ρcp·ε·(T14 − T), azaz dT/dt = (T14 − T)/τ, τ legkisebb négyzetes illesztéssel. Ez az előremenő hőmérséklet ingadozását (pl. késő kazán) is kiszűri.</li>\n<li>Csőkígyó hatásosság ε = (T14 − T15)/(T14 − T_tároló), UA = −V̇ρcp·ln(1 − ε), ill. UA = P/LMTD.</li>\n</ul>\n<h2>Kisütés jellemzők</h2>\n<ul>\n<li>V40/V45/V55: a kivett térfogat, amíg a T13 kilépő ≥ 40/45/55 °C.</li>\n<li>Kisütési hatásfok: a 40 °C-ig kivett hő / (300 l víz lehűtése a kezdeti átlagról a hideg víz hőmérsékletére).</li>\n<li>Hidegfront: az a kivett térfogat, amikor a réteg hőmérője átlépi a kezdeti és a hideg víz közti felezőt. Ideális dugattyúáramnál (keveredés nélkül) a k. réteg közepe (k − 0,5)·50 l-nél érné el.</li>\n</ul>"
+ "methodHtml": "<h2>Mérőállomás (a mérőprogram alapján)</h2>\n<ul>\n<li>T0: alsó csonk (kisütésnél hideg belépő), T1–T6: belső (30 cm) hőmérők az 1.(alsó)–6.(felső) rétegben, T7–T12: fal melletti (3 cm) hőmérők ugyanazokban a rétegekben, T13: felső melegvíz-kilépő, T14/T15: csőkígyó belépő/kilépő, T16: környezet. Minden számítás a kalibrált (<code>_korr</code>) oszlopokból.</li>\n<li>Fájlnév: <code>Meres_&lt;dátum&gt;_&lt;idő&gt;_&lt;kisütési l/h&gt;_&lt;csőkígyós l/h&gt;_&lt;megjegyzés&gt;</code>.</li>\n<li>Tároló: 300 l, 6 egyenlő (50 l-es) réteggel számolva.</li>\n</ul>\n<h2>Adatminőség – mintánkénti QC-flag</h2>\n<p>Minden mérési pont (5 s) minden hőmérőjéhez minőségjelző tartozik. Csak a fizikailag lehetetlen érték törlődik,</p>\n<p>minden más anomália megmarad az adatsorban és a grafikonokon, csak meg van jelölve (a görbe azon a szakaszon szaggatott).</p>\n<ul>\n<li>0 – jó</li>\n<li>1 – gyanús, tüske (T1–T12): a 35 s-os mozgó mediántól &gt; 5 K eltérés, ami azonnal visszaugrik (a meredek, de monoton felfutás / hidegfront nem az) → megtartva</li>\n<li>2 – gyanús, eltér a környezetétől (T1–T12): legalább 30 s-ig &gt; 2 K-val a rétegtárs és a függőleges szomszédok által kijelölt sávon kívül (1. rétegben csak felső, 6.-ban csak alsó korlát) → megtartva</li>\n<li>3 – hibás, szélsőséges eltérés (T1–T12): a minta (akár rövid kilengés is) több mint 20 K-val kívül esik a rétegtárs és a függőleges szomszédok által kijelölt sávon → törölve</li>\n<li>4 – hibás, fizikailag lehetetlen: &lt; 0 °C vagy &gt; 100 °C (pl. −201,6 °C szenzorszakadás), vagy a tárolóban (T1–T13) hidegebb a leghidegebb belépő víznél (T0 min.) − 5 K, ill. melegebb a legmelegebb előremenőnél (T14 max.) + 5 K → törölve</li>\n<li>9 – kizárva, tudottan hibás hőmérő (mérés közben feljegyezve, fájlnévben „T3 hibás”): T3 a 11.18-i 1000/1530-as felfűtésből és kisütésből → törölve</li>\n</ul>\n<p>A gyanús (1/2) értékek az átlagokban is benne vannak. Interpoláció nincs: a törölt minta helyén a görbe megszakad.</p>\n<p>Részletek: <code>01_meresek/&lt;mérés&gt;/4_adatminoseg.png</code>, az Excel „Adatminőség (QC)” lapja és a mérésenkénti adatlapok „QC T0…T16” oszlopai.</p>\n<h2>Átlagok</h2>\n<ul>\n<li>Rétegátlag: az adott réteg fal melletti és belső hőmérőjének átlaga, (belső + fal)/2. Ha az egyik értéke az adott pillanatban extrémként törölve van, a réteg értéke abban a pillanatban a megmaradt hőmérő. Más rétegből vagy időben nincs interpoláció.</li>\n<li>Fal / belső átlag: az adott csoport érvényes hőmérőinek átlaga.</li>\n<li>Tároló átlag: a 6 rétegátlag átlaga.</li>\n</ul>\n<h2>Hőmennyiségek</h2>\n<ul>\n<li>Felfűtés: hőteljesítmény Q̇ = V̇_csőkígyó·ρ((T14+T15)/2)·cp·(T14 − T15) [kW], hőmennyiség Q = ∫Q̇ dt [kWh].</li>\n<li>A Q̇ 5 s-onként számolt; az ábrákon vastagon az 1 perces (12 mintás, középre igazított) mozgóátlag, halványan a nyers érték. A Q a nyers 5 s-os értékekből összegzett, a simítás nem befolyásolja.</li>\n<li>Kisütés: a csőkígyó nem üzemel (T14/T15 lassan hűl), ezért a kivett hőt mutatjuk: Q̇ = V̇_kisütés·ρ(T0)·cp·(T13 − T0).</li>\n</ul>\n<h2>Időállandó</h2>\n<ul>\n<li>Felfűtési idő: a tároló átlag 16 °C-ról 30, 40, 50, 60, 65, 70 °C-ra érésének ideje (közös kezdőpont).</li>\n<li>Exponenciális illesztés: T(t) = T∞ − (T∞ − T₀)·e^(−t/τ) (az első 3 perc nélkül); 3τ ≈ 95%-os felfűtés.</li>\n<li>Fizikai időállandó: m·cp·dT/dt = V̇ρcp·ε·(T14 − T), azaz dT/dt = (T14 − T)/τ, τ legkisebb négyzetes illesztéssel. Ez az előremenő hőmérséklet ingadozását (pl. késő kazán) is kiszűri.</li>\n<li>Csőkígyó hatásosság ε = (T14 − T15)/(T14 − T_tároló), UA = −V̇ρcp·ln(1 − ε), ill. UA = P/LMTD.</li>\n</ul>\n<h2>Kisütés jellemzők</h2>\n<ul>\n<li>V40/V45/V55: a kivett térfogat, amíg a T13 kilépő ≥ 40/45/55 °C.</li>\n<li>Kisütési hatásfok: a 40 °C-ig kivett hő / (300 l víz lehűtése a kezdeti átlagról a hideg víz hőmérsékletére).</li>\n<li>Hidegfront: az a kivett térfogat, amikor a réteg hőmérője átlépi a kezdeti és a hideg víz közti felezőt. Ideális dugattyúáramnál (keveredés nélkül) a k. réteg közepe (k − 0,5)·50 l-nél érné el.</li>\n</ul>"
 };

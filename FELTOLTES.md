@@ -17,7 +17,7 @@ Ez a mappa egy kész, statikus weboldal. Szerver, telepítés vagy build nem kel
    a feltöltő mezőbe: `index.html`, `data.js`, `assets`, `img`, `.nojekyll`.
    - macOS Finderben a rejtett `.nojekyll` látszódjon: **Cmd + Shift + .**
    - A mappák (assets, img) szerkezete Chrome-ban és Safariban megmarad behúzáskor.
-   - A GitHub böngészős feltöltése egyszerre **legfeljebb 100 fájlt** és fájlonként **25 MB-ot** fogad.
+   - A GitHub böngészős feltöltése egyszerre **legfeljebb 100 fájlt** és fájlonként **25 MB-ot** fogad, és a túl nagy összméretű feltöltés is elakadhat.
      Ha a mappa több fájlt tartalmaz, töltsd fel két részletben:
      a) először mindent az `img/anim` mappa nélkül (az `anim` mappát ideiglenesen húzd ki a kicsomagolt `img`-ből),
      b) a repositoryban kattints az **img** mappára, ott **Add file → Upload files**, és húzd be az `anim` mappát.
