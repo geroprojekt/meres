@@ -49,10 +49,17 @@
     list.forEach(function (f) {
       if (f.group) { h += '<h3 class="group">' + esc(f.group) + "</h3>"; }
       var idx = gallery.push(f) - 1;
-      h += '<figure class="card fig' + (f.wide ? " wide" : "") + '">'
-        + '<button class="zoom" type="button" data-i="' + idx + '" aria-label="Nagyítás: ' + esc(f.title) + '">'
+      var img = '<button class="zoom" type="button" data-i="' + idx + '" aria-label="Nagyítás: ' + esc(f.title) + '">'
         + '<img loading="lazy" decoding="async" src="' + esc(f.src) + '" alt="' + esc(f.title) + '" width="' + f.w + '" height="' + f.h + '" style="--ar:' + f.w + "/" + f.h + '">'
-        + "</button>"
+        + "</button>";
+      if (f.explain) {                       // magyarázat: függőleges ábránál mellette, egyébként alatta
+        h += '<figure class="card fig ' + (f.side ? "side" : "below") + '">' + img
+          + '<figcaption class="explain"><h3>' + esc(f.title) + "</h3>"
+          + f.explain.map(function (x) { return "<h4>" + esc(x.h) + "</h4><p>" + esc(x.p) + "</p>"; }).join("")
+          + "</figcaption></figure>";
+        return;
+      }
+      h += '<figure class="card fig' + (f.wide ? " wide" : "") + '">' + img
         + '<figcaption class="cap"><h3>' + esc(f.title) + "</h3>" + (f.desc ? "<p>" + esc(f.desc) + "</p>" : "") + "</figcaption></figure>";
     });
     el.innerHTML = h;
